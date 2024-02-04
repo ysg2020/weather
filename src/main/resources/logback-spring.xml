@@ -7,13 +7,11 @@
     <!-- springProfile 태그를 사용하여 profile 별 property 값 설정 -->
     <springProfile name="local">
         <!-- local log file path -->
-        <!--<property name="LOG_PATH" value="/Users/username/Desktop/log"/>-->
-        <property name="LOG_PATH" value="./localLogs"/>
+        <property name="LOG_PATH" value="logs/local"/>
     </springProfile>
     <springProfile name="dev">
         <!-- dev log file path -->
-        <!--<property name="LOG_PATH" value="/home/instance/log"/>-->
-        <property name="LOG_PATH" value="./devLogs"/>
+        <property name="LOG_PATH" value="logs/dev"/>
     </springProfile>
 
     <!-- Environment 내의 프로퍼티들을 개별적으로 설정 -->
